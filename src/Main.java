@@ -30,7 +30,7 @@ public class Main {
         System.out.println(w);
 
         // c. 20 + -3*5 / 8
-        float v= 20 + (-3*5)/8f;
+        float v= 20 + -3*5/8f;
         System.out.println(v);
 
         // d. 5 + 15 / 3 * 2 - 8 % 3
