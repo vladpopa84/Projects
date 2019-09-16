@@ -12,9 +12,9 @@ public class Main {
 
         // Exercitiul 3
 
-        float a= 2.7f;
-        float b= 3.4f;
-        float c= (a / b);
+        int a= 10;
+        int b= 3;
+        float c= (float)a / (float)b;
 
 
         System.out.println(c);
