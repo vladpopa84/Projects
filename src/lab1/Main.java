@@ -7,16 +7,21 @@ public class Main {
         sum();
         divide();
         all();
+
         //2.
         System.out.println("Rezultatul adunarii este" + " " + SUM(8,7));
         System.out.println("Rezultatul scaderii este" + " " + SUB(8,7));
         System.out.println("Rezultatul inmultirii este" + " " + MULTY(8,7));
         System.out.println("Rezultatul impartirii este" + " " + DIV(8,7));
+
         //3
-        String Model1=  " "+" "+ " "+"J     a    v     v  a\n"+
-                      " "+" "+" "+  "J    a a    v   v  a a\n"+
-                    "J  J   aaaaa    v v  aaaaa\n"+
-                  " "+     "JJ   a     a    v  a     a";
+        String Model1=  "   J   a  v     v  a  \n" +
+                        "   J  a a  v   v  a a \n" +
+                        "J  J aaaaa  v v  aaaaa\n" +
+                        " JJ a     a  v  a     a";
+
+
+
         System.out.println(Model1);
 
         //4
@@ -51,12 +56,14 @@ public class Main {
     }
 
 public static void printMyName() {
+
         // Exercitiul 1
         System.out.println("Hello!");
         System.out.println("Numele meu este"+" "+"Vlad Popa"+".");
     }
 
     public  static void sum(){
+
         // Exercitiul 2
         int x= 3;
         float y= 2.56f;
@@ -72,6 +79,7 @@ public static void printMyName() {
         System.out.println(c);
     }
     public  static void all(){
+
         // Exercitiul 4
 
         // a. -5 + 8 * 6
@@ -92,6 +100,7 @@ public static void printMyName() {
     }
 
     //2. Scrieti care o metoda java pentru fiecare din urmatoarele operatii matematice: adunare, scadere, inmultire, impartire.
+
     //Adunare
     public  static int SUM(int firstNumber, int secondNumber){
         int SUM= firstNumber + secondNumber;
