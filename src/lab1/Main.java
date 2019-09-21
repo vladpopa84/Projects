@@ -23,6 +23,28 @@ public class Main {
         System.out.println(media(1,2,4));
 
         //5
+        System.out.println(" +\"\"\"\"\"+\n" +
+                "[| o o |]\n" +
+                " |  ^  |\n" +
+                " | '_' |\n" +
+                " +_____+");
+        //6
+
+        System.out.println(remainder(10,3));
+
+        //7
+
+        System.out.println(temp(77));
+
+        //8
+        System.out.println(lungime(20));
+
+        //9
+        speed();
+
+
+
+
 
 
 
@@ -95,6 +117,45 @@ public static void printMyName() {
         float media =  (a +  b +  c)/3f;
         return  media;
     }
-    //5.Scrieti o metoda java, care sa afiseze urmatorul model:
+    //6.Scrieti o metoda java, care sa returneze restul impartirii a doua numere
+
+    public static int remainder(int a, int b){
+        int remainder = a%b;
+        return remainder;
 
     }
+
+    //7.Scrieti o metoda java, care sa primeasca ca si parametru un numar, care sa reprezinte temperatura in Fahrenheit, si sa returneze temperatura in Celsius. Formula de calcul este: C = 5/9 * (F -32)
+
+    public  static int temp(int F){
+        int C = (F - 32)*5/9;
+        return C;
+    }
+    //8.Scrieti o metoda java, care sa primeasca ca si parametru un numar real, care sa reprezinte distanta in inch, si sa returneze distanta in metrii
+
+    public  static float lungime(float x){
+        float metri = (float) (x / 39.37);
+        return  metri;
+    }
+
+    //9.Scrieti o metoda java, care primeste distanta (in metrii) si timpul (ca si 3 numere: ore, minute, secunde), si afiseaza viteza, in metrii pe secunda, kilometrii pe ora si mile pe ora.
+
+    public static void speed() {
+        int d = 6000;
+        int o = 2;
+        int m = 0;
+        int s = 0;
+
+        int t = (o * 3600) + (m * 60) + s;
+        float v = (float) d / t;
+        float vkmh = v * 3.6f;
+        float vmph = vkmh / 1.609f;
+
+        System.out.println(v);
+        System.out.println(vkmh);
+        System.out.println(vmph);
+
+
+    }
+    }
+
