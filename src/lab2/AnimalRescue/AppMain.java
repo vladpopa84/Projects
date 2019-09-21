@@ -1,19 +1,22 @@
 package lab2.AnimalRescue;
 
+import java.security.spec.PSSParameterSpec;
+
 public class AppMain {
     public static void main(String[] args) {
+
         Cat tom = new Cat();
         tom.name= "Tomy";
         System.out.println(tom.name
         );
+
+        jh();
     }
 
-    public  static  main(String[] args) {
-        System.out.println();
+    public  static  void jh() {
+        System.out.println("zzzz");
     }
 
-    public static void main() {
-        Cat.
-        System.out.println();
+
     }
-}
+
