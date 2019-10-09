@@ -39,7 +39,7 @@ public class Main {
 
         //7
 
-        System.out.println(temp(77));
+        System.out.println(temp(100));
 
         //8
         System.out.println(lungime(20));
@@ -136,8 +136,8 @@ public static void printMyName() {
 
     //7.Scrieti o metoda java, care sa primeasca ca si parametru un numar, care sa reprezinte temperatura in Fahrenheit, si sa returneze temperatura in Celsius. Formula de calcul este: C = 5/9 * (F -32)
 
-    public  static int temp(int F){
-        int C = (F - 32)*5/9;
+    public  static float temp(float F){
+        float C = (F - 32)*5/9;
         return C;
     }
     //8.Scrieti o metoda java, care sa primeasca ca si parametru un numar real, care sa reprezinte distanta in inch, si sa returneze distanta in metrii
