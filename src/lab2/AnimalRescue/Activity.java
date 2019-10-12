@@ -2,5 +2,13 @@ package lab2.AnimalRescue;
 
 public class Activity {
 
-    String recreationActivity = "Chasing mice";
+   private String recreationActivity = "Chasing mice";
+
+    public String getRecreationActivity() {
+        return recreationActivity;
+    }
+
+    public void setRecreationActivity(String recreationActivity) {
+        this.recreationActivity = recreationActivity;
+    }
 }

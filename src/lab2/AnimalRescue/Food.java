@@ -1,8 +1,43 @@
 package lab2.AnimalRescue;
 
 public class Food {
-    String name = "Whiskas";
-    int Price = 32;
-    int Quantity = 4;
-    int Stock = 6;
+    private String name = "Whiskas";
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    private int price = 32;
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        price = price;
+    }
+
+    private int quantity = 4;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        quantity = quantity;
+    }
+
+    private int stock = 6;
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        stock = stock;
+    }
 }
