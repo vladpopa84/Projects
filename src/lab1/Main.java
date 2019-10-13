@@ -9,10 +9,8 @@ public class Main {
         all();
 
         //2.
-        System.out.println("Rezultatul adunarii este" + " " + SUM(8,7));
-        System.out.println("Rezultatul scaderii este" + " " + SUB(8,7));
-        System.out.println("Rezultatul inmultirii este" + " " + MULTY(8,7));
-        System.out.println("Rezultatul impartirii este" + " " + DIV(8,7));
+
+
 
         //3
         String Model1=  "   J   a  v     v  a  \n" +
@@ -101,26 +99,7 @@ public static void printMyName() {
 
     //2. Scrieti care o metoda java pentru fiecare din urmatoarele operatii matematice: adunare, scadere, inmultire, impartire.
 
-    //Adunare
-    public  static int SUM(int firstNumber, int secondNumber){
-        int SUM= firstNumber + secondNumber;
-        return  SUM;
-    }
-    //Scadere
-    public static int SUB(int firstNumber, int secondNumber){
-        int SUB= firstNumber - secondNumber;
-        return SUB;
-    }
-    //Inmultire
-    public static int MULTY(int firstNumber, int secondNumber){
-        int MULTY= firstNumber * secondNumber;
-        return MULTY;
-    }
-    //Impartire
-    public static float DIV(float firstNUmber, float secondNumber){
-        float DIV= firstNUmber / secondNumber;
-        return DIV;
-    }
+
     //4.Scrieti o metoda java, care sa primeasca 3 parametrii de tip numar, si sa returneze media numerelor.
     public static float media(int a, int b, int c){
         float media =  (a +  b +  c)/3f;
