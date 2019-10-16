@@ -1,4 +1,4 @@
-package lab2.AnimalRescue;
+package lab4.AnimalRescue;
 
 public class Food {
     private String name = "Whiskas";
