@@ -1,6 +1,6 @@
 package lab4.AnimalRescue;
 
-public class Cat {
+public class Cat extends Animal {
 
     String color= "blue";
     String name= "Tom";

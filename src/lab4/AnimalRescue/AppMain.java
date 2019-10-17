@@ -3,36 +3,52 @@ package lab4.AnimalRescue;
 public class AppMain {
     public static void main(String[] args) {
 
-        Animal Tom = new Animal();
-        Tom.setName("Tomy");
-        System.out.println(Tom.getName());
+        Duck Daffy = new Duck();
 
-        Tom.setAge(3);
-        System.out.println(Tom.getAge());
+        System.out.println(Daffy.talk());
 
-        Adopter BugsBunny = new Adopter();
-        BugsBunny.setName("Mickey Mouse");
-        System.out.println(BugsBunny.getName());
+        Daffy.setAge(2);
+        int age = Daffy.getAge();
+        System.out.println(age);
 
-        Food Whiskas = new Food();
-        Whiskas.setName("Purina");
-        System.out.println(Whiskas.getName());
+        Daffy.setHealthiness(7);
+        int health = Daffy.getHealthiness();
+        System.out.println(health);
 
-        Activity Chasingmice = new Activity();
-        Chasingmice.setRecreationActivity("Running");
-        System.out.println(Chasingmice.getRecreationActivity());
+        Dog Azorel = new Dog();
 
-        Vet DoctorHouse = new Vet();
-        DoctorHouse.setName("Doctor Alban");
-        System.out.println(DoctorHouse.getName());
+        Azorel.setName("Labus");
+
+        String name = Azorel.getName();
+        System.out.println(name);
+
+        Azorel.setFavoriteFood("Pedigree");
+        String food = Azorel.getFavoriteFood();
+        System.out.println(food);
+
+
+        System.out.println(Azorel.bark());
+
+        Azorel.barking();
+
+        Azorel.setColor("brown");
+        String color = Azorel.getColor();
+        System.out.println(color);
+
+        Azorel.setHungryness(100);
+        int hungry = Azorel.getHungryness();
+        System.out.println(hungry);
+
+        System.out.println(Azorel.eyeColor);
+
+        Azorel.otherEyeColor = "green";
+        System.out.println(Azorel.otherEyeColor);
 
 
     }
 
+}
 
 
 
-
-
-    }
 
