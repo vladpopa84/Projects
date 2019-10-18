@@ -47,6 +47,11 @@ op.adunaPare(98);
         //7
         op.sumBig();
 
+        //8
+       op.div7(7,14);
+
+       //9
+
 
 
     }

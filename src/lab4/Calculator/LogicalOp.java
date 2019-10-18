@@ -238,25 +238,27 @@ public class LogicalOp {
 
     public void countEven() {
         int i = 1;
-        while (i<=100) {
+        while (i <= 100) {
             if (i % 2 == 0) {
-                System.out.print(i +" ");
-            } i=i+1;
+                System.out.print(i + " ");
+            }
+            i = i + 1;
         }
         System.out.println();
     }
 
     public void countUnEven() {
         int i = 1;
-        while (i<=100) {
+        while (i <= 100) {
             if (i % 2 != 0) {
-                System.out.print(i +" ");
-            } i=i+1;
+                System.out.print(i + " ");
+            }
+            i = i + 1;
         }
         System.out.println();
     }
 
-    public void sumBig () {
+    public void sumBig() {
         int x = 111;
         int y = 8899;
         int sum = 0;
@@ -271,6 +273,26 @@ public class LogicalOp {
 
 
     }
+
+    public void div7(float x, int y) {
+        float sum = 0;
+        float med;
+        int count = 0;
+        while (x <= y) {
+            if (x % 7 == 0) {
+                sum = sum + x;
+                count = count + 1;
+                x = x + 1;
+            } else x=x+1;
+
+        }
+
+        med = sum / count;
+        System.out.println(med);
+    }
+
+
+
 
 
 
