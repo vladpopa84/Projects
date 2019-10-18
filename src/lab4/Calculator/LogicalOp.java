@@ -99,27 +99,190 @@ public class LogicalOp {
     }
 
     //FOR
-
+//3
     public void countBW(int x, int y) {
-        for (int i = x; i >= y; i--) {
-
-            System.out.println(i);
+        for (int i = x; i <= y; i++) {
+            System.out.print(i + " ");
         }
-
+        System.out.println();
     }
 
+    //8
     public float sumAndAverage(int x, int y) {
 
         int sum = 0;
         float count = 0;
-        for (int i = x; i <= y; i++){
-            sum =sum + i;
-           count++;
+        for (int i = x; i <= y; i++) {
+            sum = sum + i;
+            count++;
 
 
-        } float xxx = sum/count;
+        }
+        float xxx = sum / count;
         return xxx;
     }
 
+    //1
+    public void countTo100(int x) {
+
+        for (int i = x; i <= 100; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+    }
+
+    //2
+    public void countToMinus(int x) {
+        for (int i = x; i >= -100; i--) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+    }
+
+    //4
+    public void countBTW(int x, int y) {
+        int i;
+        if (x < y) {
+            for (i = x; i <= y; i++) {
+                System.out.print(i + " ");
+            }
+        } else for (i = y; i <= x; i++) {
+            System.out.print(i + " ");
+        }
+
+        System.out.println();
+
+    }
+
+    //5
+    public void numerePare() {
+        int i;
+        for (i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+
+        }
+        System.out.println();
+
+    }
+
+    //6
+    public void numereImpare() {
+        int i;
+        for (i = 1; i <= 100; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+
+        }
+        System.out.println();
+    }
+
+    //7
+    public void adunaPare(int x) {
+        int i;
+        int sum = 0;
+        for (i = x; i <= 100; i++) {
+            if (i % 2 == 0) {
+                sum = sum + i;
+            }
+        }
+        System.out.println(sum);
+    }
+//9
+
+
+    //WHILE
+
+    //1
+    public void countTo1000(int x) {
+        while (x <= 100) {
+            System.out.print(x + " ");
+            x = x + 1;
+        }
+        System.out.println();
+    }
+
+    public void countToMin100(int x) {
+        while (x >= -100) {
+            System.out.print(x + " ");
+            x = x - 1;
+        }
+        System.out.println();
+    }
+
+    public void countXToY(int x, int y) {
+        while (x <= y) {
+            System.out.print(x + " ");
+            x = x + 1;
+        }
+        System.out.println();
+    }
+
+    public void countAToB(int a, int b) {
+        if (a <= b) {
+            while (a <= b) {
+                System.out.print(a + " ");
+                a = a + 1;
+            }
+        } else while (b <= a) {
+            System.out.print(b + " ");
+            b = b + 1;
+        }
+        System.out.println();
+
+    }
+
+    public void countEven() {
+        int i = 1;
+        while (i<=100) {
+            if (i % 2 == 0) {
+                System.out.print(i +" ");
+            } i=i+1;
+        }
+        System.out.println();
+    }
+
+    public void countUnEven() {
+        int i = 1;
+        while (i<=100) {
+            if (i % 2 != 0) {
+                System.out.print(i +" ");
+            } i=i+1;
+        }
+        System.out.println();
+    }
+
+    public void sumBig () {
+        int x = 111;
+        int y = 8899;
+        int sum = 0;
+        int count = 0;
+        while (x <= y) {
+            sum = sum + x;
+            x = x + 1;
+            count = count + 1;
+        }
+        System.out.println(sum);
+        System.out.println(sum / count);
+
+
+    }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
