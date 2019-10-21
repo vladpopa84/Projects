@@ -51,6 +51,11 @@ op.adunaPare(98);
        op.div7(7,14);
 
        //9
+        op.Fibonacci();
+
+        //10
+
+        op.CozaLozaWoza(1);
 
 
 

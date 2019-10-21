@@ -283,7 +283,7 @@ public class LogicalOp {
                 sum = sum + x;
                 count = count + 1;
                 x = x + 1;
-            } else x=x+1;
+            } else x = x + 1;
 
         }
 
@@ -291,7 +291,47 @@ public class LogicalOp {
         System.out.println(med);
     }
 
+    public void Fibonacci() {
+        int n0 = 0;
+        int n1 = 1;
+        int n2;
 
+        System.out.print(n0 + " " + n1);
+
+        for (int i = 2; i <= 19; i++) {
+            n2 = n1 + n0;
+            System.out.print(" " + n2 + " ");
+            n0 = n1;
+            n1 = n2;
+        }
+        System.out.println();
+    }
+
+    public void CozaLozaWoza(int n) {
+
+
+        for (n = 1; n <= 110; n++) {
+            if (n % 11 == 0) {
+                System.out.println();
+            } else if (n % 3 == 0) {
+                System.out.print("Coza" +" ");
+            } else if (n % 5 == 0) {
+                System.out.print("Loza" + " ");
+            } else if (n % 7 == 0) {
+                System.out.print("Woza"+ " ");
+            } else if (n % 3 == 0 && n % 5 == 0) {
+                System.out.print("CozaLoza" + " ");
+            } else if (n % 3 == 0 && n % 7== 0) {
+                System.out.print("CozaWoza" + " ");
+            } else if (n % 5 == 0 && n % 7== 0) {
+                System.out.print("LozaWoza" + " ");
+            } else if (n%3==0 && n%5==0 && n % 7 == 0) {
+                System.out.print("CozaLozaWoza" + " ");
+            } else System.out.print(n + " ");
+        }
+
+
+    }
 
 
 
