@@ -206,6 +206,7 @@ public class LogicalOp {
         System.out.println();
     }
 
+    //2
     public void countToMin100(int x) {
         while (x >= -100) {
             System.out.print(x + " ");
@@ -214,6 +215,7 @@ public class LogicalOp {
         System.out.println();
     }
 
+    //3
     public void countXToY(int x, int y) {
         while (x <= y) {
             System.out.print(x + " ");
@@ -222,6 +224,7 @@ public class LogicalOp {
         System.out.println();
     }
 
+    //4
     public void countAToB(int a, int b) {
         if (a <= b) {
             while (a <= b) {
@@ -236,6 +239,7 @@ public class LogicalOp {
 
     }
 
+    //5
     public void countEven() {
         int i = 1;
         while (i <= 100) {
@@ -247,6 +251,7 @@ public class LogicalOp {
         System.out.println();
     }
 
+    //6
     public void countUnEven() {
         int i = 1;
         while (i <= 100) {
@@ -258,6 +263,7 @@ public class LogicalOp {
         System.out.println();
     }
 
+    //7
     public void sumBig() {
         int x = 111;
         int y = 8899;
@@ -271,9 +277,9 @@ public class LogicalOp {
         System.out.println(sum);
         System.out.println(sum / count);
 
-
     }
 
+    //8
     public void div7(float x, int y) {
         float sum = 0;
         float med;
@@ -291,6 +297,7 @@ public class LogicalOp {
         System.out.println(med);
     }
 
+    //9
     public void Fibonacci() {
         int n0 = 0;
         int n1 = 1;
@@ -307,6 +314,7 @@ public class LogicalOp {
         System.out.println();
     }
 
+    //10
     public void CozaLozaWoza(int n) {
 
 
@@ -332,9 +340,6 @@ public class LogicalOp {
 
 
     }
-
-
-
 
 
 }
