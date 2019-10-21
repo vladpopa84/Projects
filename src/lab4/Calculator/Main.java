@@ -23,6 +23,8 @@ op.numereImpare();
 
 op.adunaPare(98);
 
+op.Pyramid(7);
+
 
 //WHILE
 

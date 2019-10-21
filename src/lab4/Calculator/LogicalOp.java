@@ -192,7 +192,21 @@ public class LogicalOp {
         }
         System.out.println(sum);
     }
-//9
+
+    //9
+    public void Pyramid(int n) {
+        int i;
+        int j;
+
+        for (i = 1; i <= n; i++) {
+            for (j = 7; j >= i; j--) {
+                System.out.print("*");
+
+            }
+            System.out.println();
+        }
+    }
+
 
 
     //WHILE
@@ -318,22 +332,22 @@ public class LogicalOp {
     public void CozaLozaWoza(int n) {
 
 
-        for (n = 1; n <= 110; n++) {
+        for (n = 1; n <= 111; n++) {
             if (n % 11 == 0) {
                 System.out.println();
             } else if (n % 3 == 0) {
-                System.out.print("Coza" +" ");
+                System.out.print("Coza" + " ");
             } else if (n % 5 == 0) {
                 System.out.print("Loza" + " ");
             } else if (n % 7 == 0) {
-                System.out.print("Woza"+ " ");
+                System.out.print("Woza" + " ");
             } else if (n % 3 == 0 && n % 5 == 0) {
                 System.out.print("CozaLoza" + " ");
-            } else if (n % 3 == 0 && n % 7== 0) {
+            } else if (n % 3 == 0 && n % 7 == 0) {
                 System.out.print("CozaWoza" + " ");
-            } else if (n % 5 == 0 && n % 7== 0) {
+            } else if (n % 5 == 0 && n % 7 == 0) {
                 System.out.print("LozaWoza" + " ");
-            } else if (n%3==0 && n%5==0 && n % 7 == 0) {
+            } else if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0) {
                 System.out.print("CozaLozaWoza" + " ");
             } else System.out.print(n + " ");
         }
