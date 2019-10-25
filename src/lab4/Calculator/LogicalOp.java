@@ -144,7 +144,7 @@ public class LogicalOp {
     //4
     public void countBTW(int x, int y) {
         int i;
-        if (x < y) {
+        if (x <= y) {
             for (i = x; i <= y; i++) {
                 System.out.print(i + " ");
             }
