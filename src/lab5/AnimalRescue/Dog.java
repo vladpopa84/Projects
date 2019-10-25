@@ -2,27 +2,16 @@ package lab5.AnimalRescue;
 
 import lab5.AnimalRescue.Animal;
 
-public class Dog extends  Animal {
+public class Dog extends Animal {
 
-public String bark () {
-    return "ham ham";
-}
 
-public void barking() {
-    System.out.println("hau hau");
-}
+    public void Talk() {
+        System.out.println("Ham Ham");
+    }
 
-String eyeColor = "blue";
-
-String otherEyeColor;
-
-public void Talk() {
-    System.out.println("Ham Ham");
-}
-
-public void Move() {
-    System.out.println("Running");
-}
+    public void Move() {
+        System.out.println("Running");
+    }
 
 
 }

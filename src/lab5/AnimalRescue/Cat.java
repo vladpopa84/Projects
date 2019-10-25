@@ -4,11 +4,6 @@ import lab5.AnimalRescue.Animal;
 
 public class Cat extends Animal {
 
-    String color= "blue";
-    String name= "Tom";
-    int age= 2;
-    Float weight= 7f;
-    char gender= 'm';
 
     public void Talk() {
         System.out.println("Meuw");
