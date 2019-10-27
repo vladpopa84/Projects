@@ -28,7 +28,23 @@ public class Main {
         int[] even = op.evenNumbers(myArray);
         System.out.println(Arrays.toString(even));
 
+        float average = op.averageArray(myArray);
+        System.out.println(average);
+
+        boolean comp = op.compTwo("An");
+        System.out.println(comp);
+
+        String index = op.isNumber(6);
+        System.out.println(index);
+
+        op.pattern();
+
+
+
+
     }
+
+
 
 
 }
