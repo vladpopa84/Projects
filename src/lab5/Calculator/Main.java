@@ -44,8 +44,12 @@ public class Main {
         System.out.print(Arrays.toString(x));
         System.out.println();
 
-        int[] z = op.isNumberThere(3);
+        int[] z = op.isNumberThere(4);
         System.out.print(Arrays.toString(z));
+        System.out.println();
+
+        int secondSmaller = op.secondSmaller();
+        System.out.println(secondSmaller);
 
 
 

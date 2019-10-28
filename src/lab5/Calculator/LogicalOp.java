@@ -203,44 +203,34 @@ public class LogicalOp {
         int z;
         int index;
 
-        for ( index = 0; index < myArray.length; index++) {
+        for (index = 0; index < myArray.length; index++) {
             if (x == myArray[index]) {
-                z=myArray[0];
+                z = myArray[0];
                 myArray[0] = myArray[index];
                 myArray[index] = z;
 
-                for (index=1; index<myArray.length;index++) {
-                    newArray[index-1] = myArray[index];
+                for (index = 1; index < myArray.length; index++) {
+                    newArray[index - 1] = myArray[index];
                 }
-
-
             }
-
-        } return newArray;
+            Arrays.sort(newArray);
+        }
+        return newArray;
     }
-}
+
+
 
 //9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array. Apelati metoda in main() pentru a verifica daca functioneaza.
-//
-//    public int secondSmaller() {
-//        int[] myArray = {1, 5, 3, 2, 4};
-//        int x;
-//        int smallest;
-//        int secondSmallest;
-//
-//
-//
-//        for (int i = 0; i < myArray.length; i++) {
-//            if (myArray[i] == x) {
-//                smallest = x;
-//            } else if (myArray[i] < x) {
-//                secondSmallest = smallest;
-//                smallest = myArray[i];
-//            } else if (myArray[i] > x) {
-//                secondSmallest = myArray[i];
-//            }
-//            return secondSmallest;
-//
-//        }
-//
-//}
+
+
+    public int secondSmaller() {
+        int[] myArray = {1, 5, 3, 2, 4};
+        int x;
+        int smallest;
+        int secondSmallest;
+
+        Arrays.sort(myArray);
+        return myArray[1];
+
+    }
+}
