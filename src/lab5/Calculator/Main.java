@@ -40,11 +40,17 @@ public class Main {
         op.pattern();
 
 
+        int[] x = op.copy();
+        System.out.print(Arrays.toString(x));
+        System.out.println();
+
+        int[] z = op.isNumberThere(3);
+        System.out.print(Arrays.toString(z));
+
+
 
 
     }
-
-
 
 
 }

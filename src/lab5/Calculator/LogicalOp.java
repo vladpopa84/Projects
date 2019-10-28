@@ -181,51 +181,66 @@ public class LogicalOp {
     }
 
 
-    //8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar. Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul primit, fara acel numar. Apelati metoda in main() pentru a verifica daca functioneaza.
+    //10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol. Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea. Apelati metoda in main() pentru a verifica daca functioneaza.
 
-//    public int[] isNumberThere(int x) {
-//        int[] myArray = {1, 2, 3, 4, 5};
-//
-//        for (int index = 0; index < myArray.length; index++) {
-//            if (x == myArray[index]) {
-//
-//               int[] newArray = myArray[];
-//
-//                return myArray;
-//           }
-//
-//        }
-//        return
-//    }
+    public int[] copy() {
+        int[] primul = {1, 3, 5, 7};
+        int[] alDoilea = new int[4];
 
 
-    //9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array. Apelati metoda in main() pentru a verifica daca functioneaza.
-
-//    public int secondSmaller(int[] array, int[]) {
-//        int[] myArray = {1,2,3,4,5};
-//        int x = 0;
-//        int y;
-//
-//        for (int i=0; i<myArray.length; i++) {
-//            if (myArray[i] >= x) {
-//                myArray[i] = x;
-//            } else if (myArray[i] < x) {
-//
-//
-//            }
-//        }
-
-        //10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol. Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea. Apelati metoda in main() pentru a verifica daca functioneaza.
-
-       public  int[] copy() {
-        int[] primul = {1,3,5,7};
-        int[] alDoilea = new int [4];
-
-        for (int i=0; i< primul.length; i++) {
-            primul[i] = alDoilea[i];
+        for (int i = 0; i < primul.length; i++) {
+            alDoilea[i] = primul[i];
         }
-           return (alDoilea);
-
+        return alDoilea;
     }
 
+
+    //8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar. Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul primit, fara acel numar. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public int[] isNumberThere(int x) {
+        int[] myArray = {1, 2, 3, 4, 5};
+        int[] newArray = new int[4];
+        int z;
+        int index;
+
+        for ( index = 0; index < myArray.length; index++) {
+            if (x == myArray[index]) {
+                z=myArray[0];
+                myArray[0] = myArray[index];
+                myArray[index] = z;
+
+                for (index=1; index<myArray.length;index++) {
+                    newArray[index-1] = myArray[index];
+                }
+
+
+            }
+
+        } return newArray;
+    }
 }
+
+//9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array. Apelati metoda in main() pentru a verifica daca functioneaza.
+//
+//    public int secondSmaller() {
+//        int[] myArray = {1, 5, 3, 2, 4};
+//        int x;
+//        int smallest;
+//        int secondSmallest;
+//
+//
+//
+//        for (int i = 0; i < myArray.length; i++) {
+//            if (myArray[i] == x) {
+//                smallest = x;
+//            } else if (myArray[i] < x) {
+//                secondSmallest = smallest;
+//                smallest = myArray[i];
+//            } else if (myArray[i] > x) {
+//                secondSmallest = myArray[i];
+//            }
+//            return secondSmallest;
+//
+//        }
+//
+//}
