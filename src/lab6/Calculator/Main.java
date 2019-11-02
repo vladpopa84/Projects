@@ -39,5 +39,11 @@ public class Main {
 
        op.biggestNumber(myList);
 
+       op.reversePosition(myList, 3);
+
+       op.evenNUmbers(myList);
+
+       op.sortList(myList);
+
     }
 }

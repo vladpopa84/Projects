@@ -1,8 +1,8 @@
 package lab6.Calculator;
 
 
-import java.util.Collections;
-import java.util.List;
+import javax.crypto.spec.PSource;
+import java.util.*;
 
 
 public class LogicalOp {
@@ -80,4 +80,51 @@ public class LogicalOp {
 
     }
 
+    //Scrieti o metoda Java care sa schimbe pozitia a doua elemente intr-o Lista,
+
+    public void reversePosition (List<Integer>myList, int index) {
+
+        int x;
+        x = myList.get(index);
+        myList.remove(index);
+        myList.add(index+1, x);
+        System.out.println(myList);
+    }
+
+    //Scrieti o metoda Java care sa primeasca o Lista si sa returneze o alta lista, care sa contina doar numerele pare din lista primita.
+
+    public void evenNUmbers (List<Integer>myList) {
+
+        for (int i=0; i<myList.size(); i++) {
+            if (myList.get(i) % 2 ==0) {
+                System.out.print(myList.get(i) + " ");
+            }
+        }
+        System.out.println();
+    }
+
+    //Scrieti o metoda Java care sa primeasca parametru o Lista nesortata, si sa returneze Lista sortata crescator.
+    // Atentie, sortarea sa se faca programatic(adica logica sa fie scrisa de voi), si nu folosit librarie externa, precum Collection.sort().
+
+    public void sortList (List<Integer>myList) {
+        int i;
+        int j;
+
+        int x;
+        int y;
+
+
+        for (i=0; i<myList.size();i++) {
+            for (j=i+1; j<myList.size();j++) {
+
+                x=myList.get(i);
+                y=myList.get(j);
+
+                if (x>y) {
+                    myList.set(i, y);
+                    myList.set(j,x);
+                }
+            }
+        } System.out.println(myList);
+    }
 }
