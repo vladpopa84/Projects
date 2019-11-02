@@ -100,6 +100,7 @@ public class LogicalOp {
         int[] myArray = new int[100];
         for (int i = 1; i <= 100; i++) {
             myArray[i - 1] = i;
+            System.out.println();
         }
         return myArray;
 
