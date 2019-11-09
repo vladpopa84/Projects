@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         LogicalOp op = new LogicalOp();
-        int sum = op.sum(1, 3, 5, 5);
+        int sum = op.sum(1, 3,4,6);
         System.out.println(sum);
 
         int sub = op.sub(1, 3, 5, 5);
