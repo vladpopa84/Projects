@@ -204,7 +204,7 @@ public class Read {
 
     //6. In clasa LogicalOp, creati o metoda  'wait()'. Metoda sa nu returneze nimic, dar sa primeasca un parametru de tip int.
     // In interiorul ei, tratati metoda Thread.sleep(), astfel incat metoda noastra sa primeasca valoarea in secunde,
-    // cat sa astepte. Ex: wait(5) -> asteapta 5 secunde.
+    // cat sa astepte. Ex: wait(5) -> asteapta 5 secunde
 
     public void Wait(int x) {
         int y = x * 1000;
