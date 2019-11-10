@@ -112,14 +112,15 @@ public class LogicalOp {
 
         int sum = 0;
         float count = 0;
+        float xxx;
         for (int i = x; i <= y; i++) {
             sum = sum + i;
             count++;
 
+        }  xxx = sum / count;
+          return xxx;
 
-        }
-        float xxx = sum / count;
-        return xxx;
+
     }
 
     //1
