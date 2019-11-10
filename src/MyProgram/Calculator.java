@@ -9,6 +9,12 @@ public class Calculator {
         return sum;
     }
 
+    public float sum(float firstNumber, float secondNumber) {
+        float sum = firstNumber + secondNumber;
+        return sum;
+    }
+
+
     public int substract(int firstNumber, int secondNumber) {
         int sub = firstNumber - secondNumber;
         return sub;
@@ -65,5 +71,23 @@ public class Calculator {
           return xxx;
 
     }
+
+    public String verify (String txt, int w) {
+        if (txt.equals("FastTrackIT ") && w <= 3) {
+            return (txt + w);
+        } else if (!txt.equals("FastTrackIT ") && w >= 4) {
+            return (w + txt);
+        } else return ("error");
+    }
+
+    public int checkBiggerNumber(int first, int second) {
+        if (first > second) {
+            return first;
+        } else {
+            return second;
+        }
+    }
+
+
 
 }
