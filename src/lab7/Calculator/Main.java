@@ -23,32 +23,30 @@ public class Main {
 //        System.out.println("Asta e valoarea: " + aj);
 
 
-//        Read read = new Read();
-//
-//        int a = read.returnInt();
-//        System.out.println(a);
-//
-//        float b = read.returnFloat();
-//        System.out.println(b);
-//
-//        long c = read.returnLong();
-//        System.out.println(c);
-//
-//        double d = read.returnDouble();
-//        System.out.println(d);
-//
-//        int[] myArray = read.returnArray(5);
-//        System.out.println(Arrays.toString(myArray));
-//
-//        List<Integer>myList = new ArrayList<>();
-//
-//        read.returnList(myList);
-//
-//        LogicalOp op = new LogicalOp();
-//
-//        op.positionValue(2);
+        Read read = new Read();
 
+        int a = read.returnInt();
+        System.out.println(a);
 
+        float b = read.returnFloat();
+        System.out.println(b);
+
+        long c = read.returnLong();
+        System.out.println(c);
+
+        double d = read.returnDouble();
+        System.out.println(d);
+
+        int[] myArray = read.returnArray(5);
+        System.out.println(Arrays.toString(myArray));
+
+        List<Integer>myList = new ArrayList<>();
+
+        read.returnList(myList);
+
+        LogicalOp op = new LogicalOp();
+
+        op.positionValue(2);
 
 
 
